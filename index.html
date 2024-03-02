@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stile.css" />
+    <script src="https://kit.fontawesome.com/47a9c5c715.js"crossorigin="anonymous"></script>
+    <title>Ongacuri</title>
+  </head>
+  <body>
+    <div class="reproductor">
+      <div class="cancion">
+        <div class="cancion_img">
+          <img src=""/>
+          <div></div>
+        </div>
+        <p class="titul_cancion"></p>
+      </div>
+
+      <div class="reproduccion">
+        <div class="avanzando">
+            <input type="range" value="0" min="0" max="0" step="1">
+            <time>--:--/--:--</time>
+        </div>
+        <div class="control">
+            <div class="control reproduccion">
+                <button type="button"><i class="fa-solid fa-angles-left"></i></button>
+                <button type="button"><i class="fa-solid fa-play"></i></button>
+                <button type="button"><i class="fa-solid fa-angles-right"></i></button>
+            </div>
+            <div class="control volumen">
+                <button type="button" name="button"><i class="fa-solid fa-volume-high"></i></button>
+                <input type="range" value="100" min="0" max="100" step="1">
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="src/controllers/index.js"></script>
+  </body>
+</html>

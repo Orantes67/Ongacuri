@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.reproductor{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-flow:row wrap;
+    width: 100%;
+    padding: 1em 2em 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em 1em;
+}
+.reproductor button{
+    border: none;
+    background: none;
+    color: black;
+    padding: 0.5em;
+}
+.reproductor button .fa-play, .reproductor button .fa-pause{
+    font-size: 2em;
+    margin-left: 0.1em;
+}
+.cancion{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis:  15em ;
+}
+.titul_cancion{
+    font-size: 0.8em;
+    margin:0;
+    text-transform: uppercase;
+} 
+.cancion_img{
+    width: 6em;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
