@@ -3,8 +3,10 @@ export class Linkedlist {
   constructor() {
     this.head = null;
     this.tail = null;
+    this.current = null;
     this.size = 0;
   }
+  //append
   añadirCabecera(data) {
     const newNodo = new Nodo(data, this.head, null);
     if (this.head) {
@@ -14,9 +16,11 @@ export class Linkedlist {
     } else {
       this.head = newNodo;
       this.tail = newNodo;
+      this.current = newNodo;
     }
     this.size++;
   }
+  //prepend
   añadirCola(data) {
     const newNodo = new Nodo(data, null, this.tail);
     if (this.tail) {
@@ -26,8 +30,8 @@ export class Linkedlist {
     } else {
       this.tail = newNodo;
       this.head = newNodo;
+      this.current = newNodo;
     }
     this.size++;
   }
-  
 }

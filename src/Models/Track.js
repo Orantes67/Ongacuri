@@ -21,7 +21,7 @@ export class Track {
   getDrc() {
     return this.#Drc;
   }
-  setMusic() {
+  setMusic(Music) {
     this.#Music = Music;
   }
   getMusic() {

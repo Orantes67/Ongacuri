@@ -1,2 +1,6 @@
 import { music } from "./dependencia.js";
-console.log(music)
+let play = document.getElementById("btn-play")
+play.addEventListener("click",function(){
+let repro
+
+})
