@@ -29,35 +29,33 @@ export class Track {
   }
   cargarCnom(posicion) {
     let Mapear = new Map([
-      ["Junior H - 1004 Kilómetros"],
-      ["Junior H - Cherekon"],
-      ["Junior H - Yo voy amarte"],
-      ["Junior H - Naci para amarte"],
+      [0,"Junior H - 1004 Kilómetros"],
+      [1,"Junior H - Cherekon"],
+      [2,"Junior H - Yo voy amarte"],
+      [3,"Junior H - Naci para amarte"],
     ]);
     return Mapear.get(posicion);
-}
+  }
   cargarImg(posicion) {
     let Mapear = new Map([
-      ["../image/music1.jpg"],
-      ["../image/music2.jpg"],
-      ["../image/music3.jpg"],
-      ["../image/music4.jpg"],
+      [0,"../image/music1.jpg"],
+      [1,"../image/music2.jpg"],
+      [2,"../image/music3.jpg"],
+      [3,"../image/music4.jpg"],
     ]);
-    return Mapear.get(posicion)
+    return Mapear.get(posicion);
   }
-  cargarMusic() {
+  cargarMusic(posicion) {
     let Mapear = new Map([
-      ["../Audio/musica1.mp3"],
-      ["../Audio/musica2.mp3"],
-      ["../Audio/musica3.mp3"],
-      ["../Audio/musica4.mp3"],
+      [0,"../Audio/musica1.mp3"],
+      [1,"../Audio/musica2.mp3"],
+      [2,"../Audio/musica3.mp3"],
+      [3,"../Audio/musica4.mp3"],
     ]);
-   
+    return Mapear.get(posicion);
   }
-  cargarDrc() {
-    let Mapear = new Map([["4:42"], ["4:24"], ["4:46"], ["4:32"]]);
-    for (let drc of Mapear.keys()) {
-      return drc;
-    }
+  cargarDrc(posicion) {
+    let Mapear = new Map([[0,"4:42"], [1,"4:24"], [2,"4:46"], [3,"4:32"]]);
+    return Mapear.get(posicion);
   }
 }

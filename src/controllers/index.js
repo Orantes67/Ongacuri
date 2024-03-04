@@ -1,1 +1,2 @@
-import { Musicas } from "../Models/Musicas.js";
+import { music } from "./dependencia.js";
+console.log(music)

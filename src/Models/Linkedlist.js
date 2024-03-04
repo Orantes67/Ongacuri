@@ -29,4 +29,5 @@ export class Linkedlist {
     }
     this.size++;
   }
+  
 }
