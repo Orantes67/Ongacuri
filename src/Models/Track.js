@@ -38,19 +38,19 @@ export class Track {
   }
   cargarImg(posicion) {
     let Mapear = new Map([
-      [0,"../image/music1.jpg"],
-      [1,"../image/music2.jpg"],
-      [2,"../image/music3.jpg"],
-      [3,"../image/music4.jpg"],
+      [0,"src/image/music1.jpg"],
+      [1,"src/image/music2.jpg"],
+      [2,"src/image/music3.jpg"],
+      [3,"src/image/music4.jpg"],
     ]);
     return Mapear.get(posicion);
   }
   cargarMusic(posicion) {
     let Mapear = new Map([
-      [0,"../Audio/musica1.mp3"],
-      [1,"../Audio/musica2.mp3"],
-      [2,"../Audio/musica3.mp3"],
-      [3,"../Audio/musica4.mp3"],
+      [0,"src/Audio/musica1.mp3"],
+      [1,"src/Audio/musica2.mp3"],
+      [2,"src/Audio/musica3.mp3"],
+      [3,"src/Audio/musica4.mp3"],
     ]);
     return Mapear.get(posicion);
   }

@@ -25,13 +25,9 @@ export class Musicas {
     ) {
       this.listaDeReproduccion.current = this.listaDeReproduccion.current.next;
       const nuevaCancion = this.listaDeReproduccion.current.data;
-      const cancionImg = document.querySelector(".cancion_img");
-      cancionImg.src = nuevaCancion.getImg();
-      const tituloCancion = document.querySelector(".titul_cancion");
-      tituloCancion.textContent = nuevaCancion.getCnom();
     }
   }
-  
+
   //backward
   retrocederCancion() {
     if (
@@ -40,10 +36,6 @@ export class Musicas {
     ) {
       this.listaDeReproduccion.current = this.listaDeReproduccion.current.prev;
       const nuevaCancion = this.listaDeReproduccion.current.data;
-      const cancionImg = document.querySelector(".cancion_img");
-      cancionImg.src = nuevaCancion.getImg();
-      const tituloCancion = document.querySelector(".titul_cancion");
-      tituloCancion.textContent = nuevaCancion.getCnom();
     }
   }
 }

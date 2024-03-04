@@ -28,10 +28,6 @@ body{
     color: black;
     padding: 0.5em;
 }
-.reproductor button .fa-play, .reproductor button .fa-pause{
-    font-size: 2em;
-    margin-left: 0.1em;
-}
 .cancion{
     display: flex;
     flex-flow: column;
@@ -39,6 +35,10 @@ body{
     align-items: center;
     text-align: center;
     flex-basis:  15em ;
+}
+.avanzando{
+    display: flex;
+    flex-flow: row;
 }
 .titul_cancion{
     font-size: 0.8em;
