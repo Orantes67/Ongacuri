@@ -7,7 +7,7 @@ export class Musicas {
     this.agregarCancion();
   }
   agregarCancion() {
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 10; i++) {
       const nuevaCancion = new Track();
       nuevaCancion.setCnom(nuevaCancion.cargarCnom(i));
       nuevaCancion.setImg(nuevaCancion.cargarImg(i));
